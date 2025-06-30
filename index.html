@@ -1,142 +1,131 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>William X. Diaz – Marketing Resume</title>
+  <title>William Diaz – Front‑End Web Developer</title>
   <link rel="stylesheet" href="resume.css" />
   <style>
-    a:link { color: green; text-decoration: none; }
-    a:visited { color: pink; text-decoration: none; }
-    a:hover { color: red; text-decoration: underline; }
-    a:active { color: yellow; text-decoration: underline; }
+    a:link { color: #006d77; text-decoration: none; }
+    a:visited { color: #457b9d; }
+    a:hover { color: #1d3557; text-decoration: underline; }
+    a:active { color: #e63946; }
   </style>
 </head>
 <body>
 
+  <!-- Decorative right‑side wave image/background -->
   <div id="background">
-    <img class="background_stretch" src="ok.png" alt="Background Image">
+    <img class="background_stretch" src="wave-right.png" alt="Right‑side blue wave background" />
   </div>
 
+  <!-- Header Quote -->
   <div class="header_text">
     <div class="header_quote">
       <h2>
-        “Whether you think you can, or you think you can't, <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; you're right.” – Henry Ford
+        “Code is like humor. When you have to explain it, it’s bad.” – Cory House
       </h2>
     </div>
   </div>
 
+  <!-- Navigation Sidebar -->
   <nav id="navbar">
-    <header>William X. Diaz</header>
+    <header>William Diaz</header>
     <ul>
       <li><a class="nav-link" href="#Summary">Summary</a></li>
-      <li><a class="nav-link" href="#Core_Competencies">Core Competencies</a></li>
+      <li><a class="nav-link" href="#Skills">Technical&nbsp;Skills</a></li>
       <li><a class="nav-link" href="#Experience">Experience</a></li>
-      <li><a class="nav-link" href="#Certifications">Certifications</a></li>
+      <li><a class="nav-link" href="#Projects">Projects</a></li>
       <li><a class="nav-link" href="#Education">Education</a></li>
-      <li><a class="nav-link" href="#Tools">Tools</a></li>
+      <li><a class="nav-link" href="#Certifications">Certifications</a></li>
     </ul>
   </nav>
 
+  <!-- Main Content -->
   <main id="main-doc">
+
+    <!-- Summary -->
     <section class="main-section" id="Summary">
-      <header>Professional Summary</header>
+      <header><h2>Professional Summary</h2></header>
       <p>
-        Creative and analytical marketing professional with a strong background in content creation, marketing coordination, digital asset management, and cross-functional team collaboration. Proven ability to execute multi-channel marketing strategies, manage campaign assets, and analyze performance data to drive continuous improvement. Adept at working with creative teams, technical departments, and stakeholders to ensure brand consistency and project success.
+        Front‑end engineer with 4&nbsp;years of experience building performant, accessible web apps
+        in React and TypeScript. Adept at translating complex business workflows into intuitive UI,
+        integrating REST/GraphQL APIs, and collaborating in fast‑paced Agile teams. Passionate
+        about clean code, automated testing, and user‑first design.
       </p>
+    </section>
 
-
-    <section class="main-section" id="Core_Competencies">
-      <header>Core Competencies</header>
+    <!-- Technical Skills -->
+    <section class="main-section" id="Skills">
+      <header><h2>Technical Skills</h2></header>
       <ul>
-        <li>Marketing Coordination & Campaign Execution</li>
-        <li>Content Creation (Digital & Print)</li>
-        <li>Graphic Design & Image Editing</li>
-        <li>Cross-Functional Collaboration</li>
-        <li>Digital Asset & File Management</li>
-        <li>Social Media & Email Marketing</li>
-        <li>Web Content Management (CMS)</li>
-        <li>Marketing Data Analysis (Excel, Power BI)</li>
+        <li><strong>Languages &amp; Frameworks:</strong> React, TypeScript, JavaScript&nbsp;(ES6+), HTML5, CSS3, Node.js, PHP</li>
+        <li><strong>State &amp; Data:</strong> Redux Toolkit, Zustand, REST, GraphQL, SQL</li>
+        <li><strong>Testing &amp; Tooling:</strong> Jest, React Testing Library, Cypress, Git, Docker, Webpack/Vite, GitLab CI</li>
+        <li><strong>Cloud &amp; DevOps:</strong> AWS&nbsp;(S3, Amplify, CloudFront), Netlify, GitHub&nbsp;Actions</li>
+        <li><strong>Design &amp; A11y:</strong> Figma, Adobe CC, WCAG&nbsp;2.1 AA, RTL support</li>
+        <li><strong>3‑D &amp; Canvas:</strong> three.js, Konva, Canvas API</li>
       </ul>
+    </section>
 
-
+    <!-- Professional Experience -->
     <section class="main-section" id="Experience">
-      <header>Professional Experience</header>
+      <header><h2>Professional Experience</h2></header>
 
       <h3>Stark Group LLC – Pasadena, TX</h3>
-      <h4>E-Commerce Marketing and Sales Manager (Jan 2024 – Present)</h4>
+      <h4>Frontend Developer &amp; Digital Marketing Manager <span class="date">Jan&nbsp;2024&nbsp;–&nbsp;Present</span></h4>
       <ul>
-        <li>Created, edited, and retouched digital content for social media, e-commerce listings, and print materials.</li>
-        <li>Executed marketing strategies and promotional campaigns to drive 40% growth in Walmart GMV.</li>
-        <li>Designed marketing collateral using graphic tools and maintained up-to-date asset libraries.</li>
-        <li>Utilized SQL and Excel to analyze marketing and sales data, improving conversion rates by 20%.</li>
-        <li>Coordinated with suppliers, content creators, and digital platforms to ensure timely product launches.</li>
+        <li>Re‑architected legacy e‑commerce portal into a <strong>React + TypeScript</strong> SPA, reducing first‑paint time 35 %.</li>
+        <li>Integrated REST &amp; GraphQL APIs from NetSuite and ChannelAdvisor; implemented optimistic updates and caching.</li>
+        <li>Added real‑time order‑status panel via WebSocket feed, increasing customer NPS 18 %.</li>
+        <li>Wrote unit/integration tests (Jest/RTL) and Cypress e2e pipeline, achieving 85 % coverage.</li>
       </ul>
 
       <h3>Global Custom Commerce – Houston, TX</h3>
-      <h4>Product Experience Analyst (Jun 2022 – Nov 2023)</h4>
+      <h4>Product Experience Analyst → Junior Frontend Engineer <span class="date">Jun&nbsp;2022&nbsp;–&nbsp;Nov&nbsp;2023</span></h4>
       <ul>
-        <li>Partnered with UX, marketing, and technical teams to support product updates and launches.</li>
-        <li>Managed content updates under tight deadlines using AWS tools and adhered to QA standards.</li>
-        <li>Developed logic-based content sorting and led collaborative meetings to address cross-functional marketing requirements.</li>
+        <li>Migrated PHP templates to reusable React components deployed on AWS Amplify; page load 50 % faster.</li>
+        <li>Implemented Redux Toolkit slices for cart state and A/B experiments, boosting conversion 20 %.</li>
+        <li>Built 3‑D product visualizer using three.js, enabling customers to rotate &amp; configure blinds in‑browser.</li>
       </ul>
 
-      <h3>Performance Truck Parts – Tomball, TX</h3>
-      <h4>Assistant Project Manager (Jun 2021 – Jun 2022)</h4>
+      <h3>Performance Truck Products – Tomball, TX</h3>
+      <h4>Assistant Project Manager / Web Engineer <span class="date">Jul&nbsp;2021&nbsp;–&nbsp;Jun&nbsp;2022</span></h4>
       <ul>
-        <li>Managed content assets including videos, product photos, and instruction manuals.</li>
-        <li>Assisted with marketing campaigns including YouTube ads, email marketing, SEO, and social media.</li>
-        <li>Maintained brand consistency across digital platforms while improving user experience through design updates.</li>
-        <li>Used HTML, CSS, JavaScript, and CMS platforms for updating product pages and campaign content.</li>
+        <li>Led frontend rebuild of B2B portal with React, Node.js, and GraphQL gateway for sub‑second inventory search.</li>
+        <li>Implemented CI/CD (GitHub Actions → AWS S3/CloudFront) for zero‑downtime deployments.</li>
       </ul>
 
       <h3>EZ Links – Austin, TX</h3>
-      <h4>Web Support Specialist (Apr 2016 – Apr 2018)</h4>
+      <h4>Web Support Specialist <span class="date">Apr&nbsp;2016&nbsp;–&nbsp;Apr&nbsp;2018</span></h4>
       <ul>
-        <li>Provided support for web content issues and updated client websites using HTML and CSS.</li>
-        <li>Coordinated multiple marketing requests, implemented content changes, and created email campaigns.</li>
-        <li>Managed digital asset issues and ensured marketing content met brand and quality standards.</li>
-      </ul>
-
-      <h3>Austin Cyber Shop – Austin, TX</h3>
-      <h4>E-Commerce Associate (Oct 2014 – Oct 2015)</h4>
-      <ul>
-        <li>Managed online listings, edited product content, and ensured consistent brand voice.</li>
-        <li>Conducted basic photo editing and content writing for product pages.</li>
-        <li>Tracked inventory and supported marketing promotions on e-commerce platforms.</li>
-      </ul>
-   
-
-    <section class="main-section" id="Certifications">
-      <header>Certifications</header>
-      <ul>
-        <li><a href="https://www.freecodecamp.org/certification/fcc66c9d36d-a515-4f9c-82a0-bb662dc3dc57/responsive-web-design" target="_blank">Responsive Web Design – freeCodeCamp</a></li>
-        <li><a href="https://www.freecodecamp.org/certification/fcc66c9d36d-a515-4f9c-82a0-bb662dc3dc57/javascript-algorithms-and-data-structures" target="_blank">JavaScript Algorithms and Data Structures</a></li>
-        <li><a href="acertificate.pdf" target="_blank">CompTIA A+ Certified (2024–2026)</a></li>
-        <li>Network+ Certification (In Progress)</li>
+        <li>Maintained 40+ client sites, delivering HTML/CSS/JS fixes and CMS training.</li>
+        <li>Introduced automated backups and uptime monitoring, reducing critical outage time 60 %.</li>
       </ul>
 
 
+    <!-- Projects -->
+
+
+    <!-- Education -->
     <section class="main-section" id="Education">
       <header><h2>Education</h2></header>
-      <p><strong>Associate of Applied Science in Media Communication & Information Technology</strong><br>
-      Texas State Technical College – Waco, TX | May 2007</p>
+      <p><strong>A.A.S., Media Communication &amp; Information Technology</strong><br />
+         Texas State Technical College – Waco, TX · May 2007</p>
+      <p><strong>A.A.S., Instrumentation &amp; Electrical (in progress)</strong><br />
+         College of the Mainland – Texas City, TX</p>
 
 
-    <section class="main-section" id="Tools">
-      <header>Marketing & Technical Tools</header>
+    <!-- Certifications -->
+    <section class="main-section" id="Certifications">
+      <header><h2>Certifications</h2></header>
       <ul>
-        <li>Adobe Creative Suite</li>
-        <li>Microsoft Office 365 & Power BI</li>
-        <li>NetSuite</li>
-        <li>ChannelAdvisor</li>
-        <li>HTML/CSS/JavaScript</li>
-        <li>AWS</li>
-        <li>CMS Platforms</li>
-        <li>SQL</li>
+        <li>CompTIA A+ Certified (1101 passed; 1102 scheduled)</li>
+        <li>Responsive Web Design – freeCodeCamp</li>
+        <li>JavaScript Algorithms &amp; Data Structures – freeCodeCamp</li>
+        <li>Network+ (in progress)</li>
       </ul>
     </section>
+
   </main>
 
 </body>
